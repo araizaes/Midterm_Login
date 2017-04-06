@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Secure Login</title>
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+
+</head>
+<body>
+    <div class="wrapper" id="login-wrapper">
+        <header class="main-header box-shadow">
+            <img src="./Images/logo.jpg">
+            <h1>Midterm</h1>
+        </header>
+        <section class="content-bottom one-column">
+            <article class="main-content one-column-content">
+                <div class="login-form box-shadow">
+                    <h1>Login</h1>
+                    <div id="login-form">
+                        <label for="username">Username</label>
+                        <input class="login-input" type="email" name="username" id="username">
+                        <label for="password">Password</label>
+                        <input class="login-input" type="password" name="password" id="password">
+                        <button type="submit" class="login-button" id="login" onclick="login()">Login</button>
+                    </div>
+                    <div id="error-container" class="error-message"><p id="error-message">Login error!</p></div>
+                </div>
+            </article>
+        </section>
+        <footer class="footer box-shadow">
+            <p class="copyright">
+                (c) Created by Eric Araiza
+            </p>
+        </footer>
+    </div>
+    <script>
+     function login() {
+         console.log('loggedin...');
+        let username = document.getElementById('username').value;
+        let password = document.getElementById('password').value;
+        let errorContainer = document.getElementById('error-container');
+        let errorMessage = document.getElementById('error-message');
+        if(username == 'login' && password == 'password') {
+              location.href = '../Midterm_3_Column/index.html';  
+        } else {
+            errorContainer.style.display = 'block';
+            errorMessage.innerHTML = 'Login error. Please try again...';
+            let handle = setInterval(() => {
+                errorContainer.style.display = 'none';
+                clearInterval(handle);
+            }, 2000);
+        }
+     }
+
+    </script>
+</body>
+</html>

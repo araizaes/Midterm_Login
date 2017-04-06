@@ -1,0 +1,92 @@
+      <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+.main-header {
+        background-color: #CCC;
+        height: 50px;
+        width: 100%;
+        padding: 15px 0;
+            }
+span.logo {
+        color: green;
+            }
+.main-content {
+        float: left;
+        background-color: blue;
+        width: 50%;
+        height: 100%;
+            }  
+
+        .main-header img {
+        float: left;
+        width: auto;
+        height: 45px;
+  }
+        article.main-content.one-column-content {
+            width:100%;
+            padding:0;
+            background-color:transparent;
+        }
+        div.login-form {
+            width:350px;
+            height:250px;
+            background-color:blue;
+            margin:150px auto 0;
+            padding:30px;
+            border-radius:5px;
+        }
+        .login-input {
+            width:100%;
+            padding:4px;
+            border-radius:5px;
+            margin-bottom:10px;
+        }
+        div#login-form {
+             margin-top:30px;
+        }
+        .login-button {
+            padding: 7px 14px;
+            font-weight: bold;
+            background-color: #CCC;
+            color: #FFF;
+            border-radius: 5px;
+        }
+    
+        .error-message {
+            display:none;
+            color:#CCC;
+            border:1px solid yellow;
+            background-color:darkred;
+            width:100%;
+            border-radius:5px;
+            margin-top:15px;
+            min-height:50px;
+        }
+        .error-message p {
+            line-height:50px;
+            font-weight:bold;
+            color:#FFF;
+            padding:0 0 0 20px;
+        }
+        #login-wrapper {
+            background-image:url('../Images/background.jpg');
+            background-size:cover;
+        }
+.footer {
+        position:absolute;
+        bottom:0;
+        right:0;
+        left:0;
+        margin-top:10px;
+        height: 50px;
+        background-color: #CCC;
+        }
+.copyright {
+        color: green;
+        font-weight: bold;
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+            }
